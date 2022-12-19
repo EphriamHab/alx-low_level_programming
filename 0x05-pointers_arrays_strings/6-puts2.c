@@ -14,7 +14,7 @@ a = 0;
 	{
 		a++;
 	}
-for (j = 0; j < x; j += 2)
+for (j = 0; j < a; j += 2)
 {
 _putchar(*(str + j));
 }
