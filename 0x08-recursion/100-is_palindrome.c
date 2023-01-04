@@ -18,8 +18,8 @@ int _strlen_recursion(char *s)
 }
 /**
  * check_palindrome - checks to see if a string is a palindrome
- * @i:int
- * @j:int
+ * @a:int
+ * @b:int
  * @s: string
  * Return: int
  */
