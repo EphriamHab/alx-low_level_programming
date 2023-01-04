@@ -1,5 +1,5 @@
 #include "main.h"
-int is_divisible(int num, int div);
+int is_divisible(int x, int div);
 
 /**
  * is_prime_number - Afunction that checks if a number is prime.
@@ -21,17 +21,17 @@ int is_prime_number(int n)
 
 /**
  * is_divisible - check if num is divisible
- * @num: the number to be checked
+ * @x: the number to be checked
  * @div: the result of division
  * Return: 1 if num is divisible or 0 if numis not divisible
  */
-int is_divisible(int num, int div)
+int is_divisible(int x, int div)
 {
-	if (num % div == 0)
+	if (x % div == 0)
 		return (0);
 
-	if (div == num / 2)
+	if (div == x / 2)
 		return (1);
 
-	return (is_divisible(num, div + 1));
+	return (is_divisible(x, div + 1));
 }
