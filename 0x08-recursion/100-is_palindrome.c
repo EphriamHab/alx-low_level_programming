@@ -6,15 +6,15 @@
  */
 int _strlen_recursion(char *s)
 {
-	int i = 0;
+	int a = 0;
 
 	if (*s)
 	{
-		i++;
-		i += _strlen_recursion(s + 1);
+		a++;
+		a += _strlen_recursion(s + 1);
 
 	}
-	return (i);
+	return (a);
 }
 /**
  * check_palindrome - checks to see if a string is a palindrome
@@ -23,14 +23,14 @@ int _strlen_recursion(char *s)
  * @s: string
  * Return: int
  */
-int check_palindrome(int i, int j, char *s)
+int check_palindrome(int a, int b, char *s)
 {
-	if (i >= j)
+	if (a >= b)
 		return (1);
-	else if (s[i] != s[j])
+	else if (s[a] != s[b])
 		return (0);
 	else
-		return (check_palindrome(i + 1, j - 1, s));
+		return (check_palindrome(a + 1, b - 1, s));
 }
 /**
  * is_palindrome - states if a string is a palindrome
@@ -39,8 +39,8 @@ int check_palindrome(int i, int j, char *s)
  */
 int is_palindrome(char *s)
 {
-	int i;
+	int a;
 
-	i = _strlen_recursion(s) - 1;
-	return (check_palindrome(0, i, s));
+	a = _strlen_recursion(s) - 1;
+	return (check_palindrome(0, a, s));
 }
