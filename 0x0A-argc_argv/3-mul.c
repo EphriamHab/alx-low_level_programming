@@ -10,15 +10,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, product = 1;
+	int j, product = 1;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < argc; i++)
-		product *= atoi(argv[i]);
+	for (j = 1; j < argc; j++)
+		product *= atoi(argv[j]);
 	printf("%d\n", product);
 	return (0);
 }
