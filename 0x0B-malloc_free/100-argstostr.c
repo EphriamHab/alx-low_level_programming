@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- **argstostr -  a function that concatenates all the arguments of your program..
+ **argstostr -  a function that concatenates all the arguments of your program.
  *@ac : int
  *@av : array
  *Return: array
