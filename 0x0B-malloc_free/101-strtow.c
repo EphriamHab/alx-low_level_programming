@@ -8,20 +8,20 @@
  */
 int wrdcnt(char *s)
 {
-	int i, n = 0;
+	int i, a = 0;
 
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] == ' ')
 		{
 			if (s[i + 1] != ' ' && s[i + 1] != '\0')
-				n++;
+				a++;
 		}
 		else if (i == 0)
-			n++;
+			a++;
 	}
-	n++;
-	return (n);
+	a++;
+	return (a);
 }
 
 /**
@@ -31,18 +31,18 @@ int wrdcnt(char *s)
  */
 char **strtow(char *str)
 {
-	int i, j, k, l, n = 0, ch = 0;
+	int i, j, k, l, a = 0, ch = 0;
 	char **x;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	n = wrdcnt(str);
-	if (n == 1)
+	a = wrdcnt(str);
+	if (a == 1)
 		return (NULL);
-	 x = (char **)malloc(n * sizeof(char *));
+	 x = (char **)malloc(a * sizeof(char *));
 	if (x == NULL)
 		return (NULL);
-	x[n - 1] = NULL;
+	x[a - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
@@ -57,7 +57,7 @@ char **strtow(char *str)
 			{
 				for (k = 0; k < ch; k++)
 					free(x[k]);
-				free(x[n - 1]);
+				free(x[a - 1]);
 				free(x);
 				return (NULL);
 			}
