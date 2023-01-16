@@ -1,4 +1,4 @@
 #ifndef PI
 #define PI 3.14159265359
-/**End the def*/
+/**End of  the def*/
 #endif
