@@ -5,7 +5,7 @@
  * @d:pointer to a struct dog
  *  @name:pointer to a string
  * @age:float
- * @owner:pointer to a string
+ * @owner:pointer to a string.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
