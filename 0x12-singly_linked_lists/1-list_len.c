@@ -2,7 +2,7 @@
 
 
 /**
- * list_len - returns the number of elements in a linked list
+ * list_len - returns the number of elements in a linked list.
  * @h: pointer to const list_t linked list
  * Return: size_t number of elements in h
  */
