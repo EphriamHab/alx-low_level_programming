@@ -6,7 +6,7 @@
 /**
  * add_node_end - adds a new node at the end of a list_t linkedlist
  * @head: pointer to head of list_t linked list
- * @str:  const string for new node
+ * @str:  const string for new node.
  * Return: pointer to new element, or NULL on failure
  */
 list_t *add_node_end(list_t **head, const char *str)
